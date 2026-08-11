@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Music Player -->
+    <div class="music-player">
+
+        <!-- Album Cover -->
+        <div class="album-section">
+            <img src="images/album.jpg" alt="Album Cover">
+        </div>
+
+        <!-- Song Information -->
+        <div class="song-info">
+            <h1>My Favorite Song</h1>
+            <p>My Favorite Artist</p>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-section">
+            <span>0:00</span>
+
+            <input type="range" min="0" max="100" value="0">
+
+            <span>3:45</span>
+        </div>
+
+        <!-- Music Controls -->
+        <div class="controls">
+
+            <button>⏮</button>
+
+            <button>▶</button>
+
+            <button>⏸</button>
+
+            <button>⏭</button>
+
+        </div>
+
+        <!-- Volume -->
+        <div class="volume-section">
+
+            <label for="volume">Volume</label>
+
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="100"
+                value="50"
+            >
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
