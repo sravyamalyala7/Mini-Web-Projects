@@ -1,31 +1,27 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Page */
 body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #141e30, #243b55);
     font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1d2671, #c33764);
 }
 
-/* Music Player */
 .music-player {
     width: 350px;
     padding: 30px;
-    background: #ffffff;
-    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Album */
 .album-section img {
     width: 220px;
     height: 220px;
@@ -34,19 +30,17 @@ body {
     margin-bottom: 20px;
 }
 
-/* Song Information */
 .song-info h1 {
     font-size: 24px;
     margin-bottom: 8px;
-    color: #222;
 }
 
 .song-info p {
-    color: #777;
+    font-size: 16px;
+    color: #666;
     margin-bottom: 25px;
 }
 
-/* Progress */
 .progress-section {
     display: flex;
     align-items: center;
@@ -54,16 +48,10 @@ body {
     margin-bottom: 25px;
 }
 
-.progress-section span {
-    font-size: 12px;
-    color: #555;
-}
-
 .progress-section input {
     flex: 1;
 }
 
-/* Controls */
 .controls {
     display: flex;
     justify-content: center;
@@ -72,32 +60,40 @@ body {
 }
 
 .controls button {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border: none;
     border-radius: 50%;
-    background: #243b55;
+    background: #1d2671;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .controls button:hover {
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
 
-/* Volume */
 .volume-section {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.volume-section label {
-    font-size: 14px;
-    color: #555;
-}
-
 .volume-section input {
     flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+
+    .music-player {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .album-section img {
+        width: 180px;
+        height: 180px;
+    }
 }
