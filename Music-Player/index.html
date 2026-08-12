@@ -29,23 +29,31 @@
 
         <!-- Progress Bar -->
         <div class="progress-section">
-            <span>0:00</span>
 
-            <input type="range" min="0" max="100" value="0">
+            <span id="current-time">0:00</span>
 
-            <span>3:45</span>
+            <input
+                type="range"
+                id="progress"
+                min="0"
+                max="100"
+                value="0"
+            >
+
+            <span id="duration">3:45</span>
+
         </div>
 
         <!-- Music Controls -->
         <div class="controls">
 
-            <button>⏮</button>
+            <button id="previous">⏮</button>
 
-            <button>▶</button>
+            <button id="play">▶</button>
 
-            <button>⏸</button>
+            <button id="pause">⏸</button>
 
-            <button>⏭</button>
+            <button id="next">⏭</button>
 
         </div>
 
@@ -65,6 +73,9 @@
         </div>
 
     </div>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 
